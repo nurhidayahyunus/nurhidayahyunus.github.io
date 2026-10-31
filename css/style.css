@@ -1,0 +1,162 @@
+body {
+  background: #e4e4e4;
+  font-family: Calibri, Arial, sans-serif;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.paper {
+  background: #ffffff;
+  width: 210mm;
+  min-height: 297mm;
+  max-width: 100%;
+  margin: 24px auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.header {
+  background: #2f2f2f;
+  color: #f5f5f5;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 0 0 6px 0;
+}
+
+.header .title {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #cfcfcf;
+  margin: 0 0 12px 0;
+}
+
+.header p {
+  font-size: 14px;
+  color: #dcdcdc;
+  margin: 4px 0;
+}
+
+.header strong {
+  color: #ffffff;
+}
+
+.photo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid #f5f5f5;
+}
+
+/* CONTENT */
+.columns {
+  flex: 1;
+  padding: 24px 32px 32px;
+  box-sizing: border-box;
+}
+
+/* SECTION HEADINGS */
+.columns h2 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 0 0 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.columns h2:not(:first-child) {
+  margin-top: 24px;
+}
+
+/* TEXT */
+.columns p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+.columns ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skills-list {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+/* EDUCATION (SEBELAH-MENYEBELAH) */
+.edu-wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.edu {
+  flex: 1;
+}
+
+.edu p {
+  margin: 0;
+}
+
+/* JOBS (TIMELINE) */
+.job {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 14px;
+  border-left: 2px solid #cfcfcf;
+}
+
+.job::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #2f2f2f;
+  border-radius: 50%;
+}
+
+.job-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.date {
+  color: #6b6b6b;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.job-company {
+  margin: 0;
+  color: #444444;
+}
+
+.columns > p {
+  text-align: justify;
+}
